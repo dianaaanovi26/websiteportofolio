@@ -1,0 +1,54 @@
+/* Header Styling */
+header {
+  background-color: #343a40; /* Dark background */
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 20px; /* Equal spacing between items */
+}
+
+.nav-item .nav-link {
+  font-size: 1.1rem; /* Make font size consistent */
+  padding: 8px 15px;
+  text-transform: uppercase; /* Make text uppercase for uniformity */
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for navigation links */
+.nav-item .nav-link:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: #fff; /* Ensure text stays white on hover */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between items */
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.2rem; /* Increase font size for smaller screens */
+  }
+}
